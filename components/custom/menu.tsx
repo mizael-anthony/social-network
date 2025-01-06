@@ -1,6 +1,6 @@
 
 import { MenuItems } from "@/types/menu-items";
-import { Home, User, BookOpenText, UserPen, Settings, LogOut } from 'lucide-react';
+import { Home, User, BookOpenText, UserPen, Settings, LogOut, ShieldMinus } from 'lucide-react';
 import Link from "next/link";
 
 const menuItems: Array<MenuItems> = [
@@ -11,6 +11,11 @@ const menuItems: Array<MenuItems> = [
                 icon: Home,
                 label: 'Home',
                 href: '/'
+            },
+            {
+                icon: ShieldMinus,
+                label: 'Admin',
+                href: '/admin'
             },
             {
                 icon: BookOpenText,
